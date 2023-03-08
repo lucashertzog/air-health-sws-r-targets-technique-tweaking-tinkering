@@ -8,7 +8,7 @@
 ## The plotCI function
 
 ```{r, sl1, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide1.PNG")
+knitr::include_graphics("figures_and_tables/Slide1.PNG")
 ```
 
 - It is a plot utility function to add confidence intervals or error bars to a dot plot
@@ -18,7 +18,7 @@ knitr::include_graphics("../figures_and_tables/Slide1.PNG")
 ## The structure of a function: start with the name
 
 ```{r, sl2, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide2.PNG")
+knitr::include_graphics("figures_and_tables/Slide2.PNG")
 ```
 
 - The name of the function comes first `plotCI` followed by the command that defines this as a `function`.
@@ -26,7 +26,7 @@ knitr::include_graphics("../figures_and_tables/Slide2.PNG")
 ## The arguments
 
 ```{r, sl3, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide3.PNG")
+knitr::include_graphics("figures_and_tables/Slide3.PNG")
 ```
 
 
@@ -36,7 +36,7 @@ knitr::include_graphics("../figures_and_tables/Slide3.PNG")
 ## The  body
 
 ```{r, sl4, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide4.PNG")
+knitr::include_graphics("figures_and_tables/Slide4.PNG")
 ```
 
 - Finally the curly braces `{` and `}` enclose the body of the function.
@@ -45,7 +45,7 @@ knitr::include_graphics("../figures_and_tables/Slide4.PNG")
 
 
 ```{r, sl5, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide5.PNG")
+knitr::include_graphics("figures_and_tables/Slide5.PNG")
 ```
 
 - The first check is whether x is a list (and assumes it contains x and y variables)
@@ -56,14 +56,14 @@ knitr::include_graphics("../figures_and_tables/Slide5.PNG")
 
 
 ```{r, sl6, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide6.PNG")
+knitr::include_graphics("figures_and_tables/Slide6.PNG")
 ```
 
 ## Return outputs
 
 
 ```{r, sl7, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide7.PNG")
+knitr::include_graphics("figures_and_tables/Slide7.PNG")
 ```
 
 
@@ -71,7 +71,7 @@ knitr::include_graphics("../figures_and_tables/Slide7.PNG")
 
 
 ```{r, sl8, eval=T, echo = F, out.width="2400px"}
-knitr::include_graphics("../figures_and_tables/Slide8.PNG")
+knitr::include_graphics("figures_and_tables/Slide8.PNG")
 ```
 
 - The argument `x` has no default value, however the argument `y` has the default setting of `NULL` which means that if the analyst does not supply any value for `y` when the function is called, then `y = NULL`.
