@@ -1,0 +1,3 @@
+# R-targets pipeline recommendations
+
+- This section will describe the technique of writing R-targets pipelines

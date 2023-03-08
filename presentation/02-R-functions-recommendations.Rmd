@@ -1,0 +1,78 @@
+# R-functions recommendations
+
+- Our recommendations for the technique for writing R functions using an example.
+- The function case study is `plotCI`: contributed to the R community email list  by Bill Venables in September 1997 
+- It shows some of the best practices for writing R functions
+
+
+## The plotCI function
+
+```{r, sl1, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide1.PNG")
+```
+
+- It is a plot utility function to add confidence intervals or error bars to a dot plot
+- The original post is archived at this website: https://stat.ethz.ch/pipermail/r-help/1997-September/001758.html
+
+
+## The structure of a function: start with the name
+
+```{r, sl2, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide2.PNG")
+```
+
+- The name of the function comes first `plotCI` followed by the command that defines this as a `function`.
+
+## The arguments
+
+```{r, sl3, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide3.PNG")
+```
+
+
+- Then the brackets enclose the `arguments` of the function `(x, y = NULL etc)`.
+
+
+## The  body
+
+```{r, sl4, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide4.PNG")
+```
+
+- Finally the curly braces `{` and `}` enclose the body of the function.
+
+## Tip: do check that the inputs are as expected
+
+
+```{r, sl5, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide5.PNG")
+```
+
+- The first check is whether x is a list (and assumes it contains x and y variables)
+- The second check is if y is NULL, in this case the y variable will have the values of x and the x variable will just indicate how many observations there are
+- It is very clever to also check if x and y are NULL, nothing can be done and the function stops 
+
+## Do stuff
+
+
+```{r, sl6, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide6.PNG")
+```
+
+## Return outputs
+
+
+```{r, sl7, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide7.PNG")
+```
+
+
+## Tip: put each argument on a separate line
+
+
+```{r, sl8, eval=T, echo = F, out.width="2400px"}
+knitr::include_graphics("../figures_and_tables/Slide8.PNG")
+```
+
+- The argument `x` has no default value, however the argument `y` has the default setting of `NULL` which means that if the analyst does not supply any value for `y` when the function is called, then `y = NULL`.
+- Likewise `uiw` has no default whereas `liw` does.  If `liw` is not supplied then it will take the value of `uiw`.
