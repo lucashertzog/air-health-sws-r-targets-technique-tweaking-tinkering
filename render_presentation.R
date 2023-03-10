@@ -7,6 +7,6 @@ render_book( "presentation", gitbook(split_by = "section", self_contained = FALS
 #file.rename("_main.html", "apmma-imputed-with-mice-analysis-plan.html")
 
 if(showme){
-browseURL("_book/index.html")
+browseURL("presentation/_book/index.html")
 }
 showme = F
