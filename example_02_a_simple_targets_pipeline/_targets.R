@@ -17,5 +17,5 @@ list(
              ),
   tar_target(plt2,
              myPlot(out*1000, filename = "figures_and_tables/plt2.png")
-  )
+             )
 )
